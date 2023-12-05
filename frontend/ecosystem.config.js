@@ -6,7 +6,7 @@ const {
 
 module.exports = {
   apps: [{
-    name: 'mesto-frontend',
+    name: 'frontend',
     script: './build/index.html',
   }],
 
