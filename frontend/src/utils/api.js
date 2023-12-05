@@ -139,7 +139,7 @@ class Api {
   }
   }
   // Замените на адрес вашего бэкенда
-  const api = new Api('https://api.mesto.skuhtalev.nomoredomainsmonster.ru/');
+  const api = new Api('https://api.mesto.skuhtalev.nomoredomainsmonster.ru');
 
   export default api;
 
