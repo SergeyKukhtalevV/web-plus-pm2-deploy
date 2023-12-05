@@ -15,7 +15,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "deploy": "npm run build && scp -Cr ./build/*  skuhtalev@51.250.27.248:/home/skuhtalev/web-plus-pm2-deploy/frontend",
+    "deploy": "npm run build && scp -Cr ./build/*  skuhtalev@51.250.27.248:/home/skuhtalev/source/frontend",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
