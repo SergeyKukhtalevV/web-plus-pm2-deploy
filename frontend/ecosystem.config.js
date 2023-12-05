@@ -6,7 +6,7 @@ const {
 
 module.exports = {
   apps: [{
-    name: 'frontend',
+    name: 'mesto-frontend',
     script: './build/index.html',
   }],
 
@@ -18,7 +18,7 @@ module.exports = {
       ref: DEPLOY_REF,
       repo: DEPLOY_REPO,
       path: DEPLOY_PATH,
-      'pre-deploy-local': `npm i && npm run build && scp -Cr ./build/*  ${DEPLOY_USER}@${DEPLOY_HOST}:${DEPLOY_PATH}/source/frontend`,
+      'post-deploy': `cd ${DEPLOY_PATH}/source/frontend && npm i && npm run build`,
     },
   },
 };
